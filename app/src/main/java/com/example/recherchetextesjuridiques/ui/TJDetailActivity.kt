@@ -1,8 +1,8 @@
-package com.example.recherchetextesjuridiques
+package com.example.recherchetextesjuridiques.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TextView
+import com.example.recherchetextesjuridiques.R
 
 class TJDetailActivity : AppCompatActivity() {
 

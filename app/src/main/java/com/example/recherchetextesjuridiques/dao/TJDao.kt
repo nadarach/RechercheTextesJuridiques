@@ -16,8 +16,12 @@ interface TJDao {
     @Insert
     fun insertAll(TJ: List<TexteJuridique>)
 
+
     @Query("SELECT *  FROM texte_juridique group by texteFR")
     fun getSUniqueRacine():List<TexteJuridique>
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    fun insertFavTJ(TJ: TexteJuridique)
 
     @Update
     fun updateFavTJ(TJ : TexteJuridique)

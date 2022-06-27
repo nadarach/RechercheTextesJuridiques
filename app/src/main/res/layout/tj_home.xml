@@ -6,22 +6,48 @@
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryDark"
     android:foregroundTint="#2196F3"
-    tools:context=".MainActivity">
+    tools:context=".ui.MainActivity">
 
     <TextView
-        android:id="@+id/tv1"
-        android:layout_width="match_parent"
+        android:id="@+id/tv1_jo"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/manrope_bold"
-        android:paddingStart="@dimen/_15sdp"
+        android:gravity="center"
         android:paddingTop="@dimen/_15sdp"
         android:paddingBottom="@dimen/_10sdp"
-        android:text="Textes Juridiques"
+        android:text="Journaux Officiels"
         android:textColor="@color/white"
         android:textSize="@dimen/_15ssp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintEnd_toStartOf="@id/tv1_jo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/ColorWhite" />
+
+    <ImageView
+        android:id="@+id/imgFaves"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:src="@drawable/ic_baseline_star_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintStart_toEndOf="@id/tv1_jo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/ColorWhite" />
 
     <SearchView
         android:id="@+id/search_view"
@@ -35,13 +61,13 @@
         android:theme="@style/ThemeOverlay.search"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv1" />
+        app:layout_constraintTop_toBottomOf="@id/tv1_jo" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:listitem="@layout/tj_item"
+        tools:listitem="@layout/jo_item"
         android:layout_margin="@dimen/_10sdp"
         app:layout_constraintHorizontal_bias="0.64"
         app:layout_constraintEnd_toEndOf="parent"
@@ -95,7 +121,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/-->
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    <!--com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/faves"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -105,6 +131,6 @@
         android:src="@drawable/ic_baseline_favorite"
         android:tint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"/-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

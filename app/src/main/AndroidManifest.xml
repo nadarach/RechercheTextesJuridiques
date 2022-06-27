@@ -9,11 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RechercheTextesJuridiques">
-        <activity android:name=".FaveTJActivity"></activity>
-        <activity android:name=".TJDetailActivity" />
-        <activity android:name=".FavTJListActivity" />
-        <activity android:name=".TJListActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".ui.TJListOfJOActivity"></activity>
+        <activity android:name=".ui.FavTJActivity" />
+        <activity android:name=".ui.TJDetailActivity" />
+        <activity android:name=".ui.FavTJListActivity" />
+        <activity android:name=".ui.TJListActivity" />
+        <activity android:name=".ui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
