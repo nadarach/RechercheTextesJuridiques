@@ -8,9 +8,9 @@ import retrofit2.http.GET
 interface RetrofitService {
 
     companion object {
-        var BASE_URL = ""
+        //var BASE_URL = ""
         var retrofitService: RetrofitService? = null
-        fun getInstance() : RetrofitService {
+        fun getInstance(BASE_URL : String) : RetrofitService {
             if (retrofitService == null) {
                 val retrofit = Retrofit.Builder()
                     .baseUrl(BASE_URL)
