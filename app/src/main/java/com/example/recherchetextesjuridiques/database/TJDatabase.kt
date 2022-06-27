@@ -26,6 +26,6 @@ abstract class TJDatabase : RoomDatabase() {
         }
     }
 
-    abstract fun getjoDao(): TJDao
+    abstract fun getTJDao(): TJDao
 
 }

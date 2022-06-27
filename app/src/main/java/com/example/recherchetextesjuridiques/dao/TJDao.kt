@@ -13,6 +13,12 @@ interface TJDao {
     @Query("Select * from texte_juridique")
     fun getAllTJ():List<TexteJuridique>
 
+    @Insert
+    fun insertAll(TJ: List<TexteJuridique>)
+
+    @Query("SELECT *  FROM texte_juridique group by texteFR")
+    fun getSUniqueRacine():List<TexteJuridique>
+
     @Update
     fun updateFavTJ(TJ : TexteJuridique)
 
