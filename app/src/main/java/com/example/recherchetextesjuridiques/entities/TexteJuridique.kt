@@ -16,13 +16,13 @@ data class TexteJuridique (
     var id: Int? = null,
 
     @ColumnInfo(name="idTJ")
-    var idTJ : Int? = null,
+    var idTJ : String? = null,
 
     @ColumnInfo(name = "idJO")
     var idJO : Int? = null,
 
     @ColumnInfo(name = "numJO")
-    var numJO : Int? = null,
+    var numJO : String? = null,
 
     @ColumnInfo(name = "anneeJO")
     var anneeJO : String? = null,

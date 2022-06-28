@@ -8,7 +8,7 @@ import com.example.recherchetextesjuridiques.entities.TexteJuridique
 interface TJDao {
 
     @Query("Select * FROM texte_juridique where idTJ=id")
-    fun getTJById(idTJ:Int?):TexteJuridique
+    fun getTJById(idTJ:String?):TexteJuridique
 
     @Query("Select * from texte_juridique")
     fun getAllTJ():List<TexteJuridique>

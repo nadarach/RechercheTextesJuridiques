@@ -9,7 +9,6 @@ import retrofit2.http.Path
 import retrofit2.http.Query
 
 interface JsonPlaceHolderAPI {
-    @GET("/v4/verses/by_key/{verse_key}?fields=page_number")
-    fun getAya(@Path("verse_key") verse_key:String?):Call<JsonObject>
-    // val ayah: Call<Ayah>
+    @GET("/v4/textes/by_key/{NumSGG}?fields=NumJO")
+    fun getTJ(@Path("numSGG") numSGG:String?):Call<JsonObject>
 }
